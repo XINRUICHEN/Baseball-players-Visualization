@@ -1,35 +1,35 @@
 # README
-棒球数据集可视化
+Baseball Players Dataset Visualization 
 ====
-概要：
+Summary：
 ----
-我选择了棒球数据集，里面包含1157个选手们的以下信息:左右手使用情况、身高、体重、击球率以及全垒得分。<br>
+This is the final project for Udacity Data Analyst Nanodegree Certificate.I chose the baseball dataset, which contains the following information for 1157 players: left and right hand usage, height, weight, hit rate, and home base score.<br>
 
-设计:
+Design:
 ----
-1、初稿:<br>
-  可视化目标是探索击球率和全垒得分的影响因素，而散点图的优势就在于方便判断两变量之间是否存在某种关联，于是我创建了散点图，每个点代表一位选手。用散点大小这一视网膜变量作为定序数据的视觉编码，散点的大小表示击球率或全垒得分。用颜色作作为定类视觉编码，散点的颜色代表选手使用左右手的情况。横纵坐标为每个选手的身高和体重情况。布局上我使标题、画布都占据网页正中央，在空白处合理安排按钮和图例的位置，使整体布局清晰明朗。<br>
+1、First draft:<br>
+  The visual goal is to explore the factors affecting the hit rate and the total score. The advantage of the scatter plot is that it is convenient to judge whether there is some correlation between the two variables, so I created a scatter plot, each point represents a player. . The retinal variable of scatter size is used as the visual coding of the sequenced data, and the size of the scatter indicates the hit rate or the full score. The color is used as the stereotype visual code, and the color of the scatter represents the case where the player uses the left and right hands. The horizontal and vertical coordinates are the height and weight of each player. On the layout, I made the title and canvas occupy the center of the page, and arranged the position of the button and the legend in the blank space to make the overall layout clear.<br>
 
-2、二稿<br>
-  根据初稿的反馈进行了更改。依然是散点图，横纵坐标为每个选手的身高和体重情况，散点的大小表示击球率或全垒得分，散点的颜色代表选手使用左右手的情况，区别在于不同时显示所有选手的情况，而是可以点击按钮选择每次显示使用左手、右手或双手的选手数据，这样页面上不再那么混乱。<br>
+2、Second draft<br>
+  Changes were made based on feedback from the first draft. It is still a scatter plot. The horizontal and vertical coordinates are the height and weight of each player. The size of the scatter indicates the hit rate or the total score. The color of the scatter represents the situation where the player uses the left and right hands. The difference is that all players are not displayed at the same time. In the case of a button, you can click on the button to select the player data for each left-hand, right-hand or both hands, so that the page is no longer confusing.<br>
 
-3、终稿<br>
-  放弃了用圆圈大小表示击球率或全垒得分的做法，横纵坐标是最重要的视觉编码，所以我将击球率或全垒得分放置在纵坐标，从而使读者能够清晰地感知击球率或全垒得分的大小。将影响因素身高和体重放在横坐标，并且用散点的颜色代表选手使用左右手的情况，通过这样的展示，可以清楚的看出身高、体重、左右手对于击球率或全垒得分的影响。<br>
+3、Final draft<br>
+  Abandoning the practice of using the size of the circle to indicate the hit rate or the total score. The horizontal and vertical coordinates are the most important visual codes, so I put the hit rate or the full score on the ordinate so that the reader can clearly perceive the shot. The size of the rate or total score. The influence factor height and weight are placed on the abscissa, and the color of the scatter is used to represent the player's use of the left and right hands. Through such display, the influence of height, weight, left and right hands on the hit rate or the total score can be clearly seen.<br>
 
-反馈：
+Feedback：
 ----
-  初稿收到的反馈:<br>
-1、把所有的想展示的东西都放在一起,可视化效果很混乱,很不合适，特别是对于刚开始接触网页端的新手来说。最好的方法是层层递进的方式以表达想法或者故事。<br>
+  For first draft:<br>
+1、Putting all the things you want to show together, the visualization is very confusing, not very suitable, especially for newcomers who are just beginning to touch the web. The best way is to progressively express ideas or stories.<br>
 
-  二稿收到的反馈：<br>
-1、气泡图应该把最需要对比的数据放在横纵坐标，对于击球率而言，击球率的值太小、变化不明显，图中圆形不能对比出差异，大部分散点大小几乎一样，说明你选择图表的类型不一定是最好的<br>
-2、没看出特别的关系，感觉没有什么发现。另外没看懂颜色表示的意思？？没忘左撇子右撇子那里想，最好标注一下<br>
+  for second draft：<br>
+1、The bubble chart should put the data that needs the most contrast on the horizontal and vertical coordinates. For the hit rate, the value of the hit rate is too small and the change is not obvious. The circle in the figure cannot compare the difference, and most of the scattered points are almost the same size. , indicating that the type of chart you choose is not necessarily the best<br>
+2、Did not see the special relationship, I feel nothing to discover. Also did not understand the meaning of the color representation? ? I didn’t forget the left-hander’s right-hander’s thought, it’s best to mark it.<br>
 
-可视化解释:
+Visualization Explanation:
 ----
-全垒得分、击球率与棒球选手的左右手使用情况、体重或者身高都没有明显的相关性，选手们的击球率集中在[0.2,0.3]内，大多数人都是右撇子。<br>
+There is no obvious correlation between the total score and the hitting rate as well as the baseball player's left and right hand usage, weight or height. The players' batting average is concentrated in [0.2, 0.3], and most of them are right-handed.<br>
 
-资源:
+References:
 ----
 1、https://blog.csdn.net/npf_java/article/details/49185225  大量 D3.js 示例<br>
 2、https://blog.csdn.net/u014711869/article/details/78789482/ 可视化工具–D3–基础图表的绘制（line）<br>
